@@ -24,44 +24,80 @@
         <section>
 
             <!-- traingle section -->
-            <div class="grid grid-cols-4 gap-1 justify-items-center mt-4 ">
-                <div class="bg-slate-200 p-4 justify-items-center">
+            <div class="grid grid-cols-4 gap-1 justify-items-center mt-4 mb-8">
+                <div class=" p-4 justify-items-center border-solid border-2 border-indigo-100 rounded-lg">
                     <img src="images/triangle.png" alt="">
                     <h1 class="text-center mt-8 text-2xl text-bold">Traingle</h1>
                     <p class="text-center">Area (A) = 0.5 X b X h </p>
-                    <input class="w-20" placeholder="Enter b" type="text" name="" id="b-value">
+                    <input class="w-20 bg-slate-300" placeholder="Enter b" type="text" name="" id="b-value">
                     <p class="inline">cm</p>
-                    <input class="w-20" placeholder="Enter h" type="text" name="" id="h-value">
+                    <input class="w-20 bg-slate-300" placeholder="Enter h" type="text" name="" id="h-value">
                     <p class="inline">cm</p>
-                    <button class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-4 ">Calculate</button>
+                    <button id="btn-traingle" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-4  hover:bg-rose-800">Calculate</button>
                 </div>
 
                 <!-- Rectangle section -->
-                <div class="bg-slate-200 p-4 justify-items-center">
+                <div class="border-solid border-2 border-indigo-100 rounded-lg ml-2 mr-2 p-4 justify-items-center">
                     <img src="images/rectangle.png" alt="">
                     <h1 class="text-center mt-8 text-2xl text-bold">Rectangle</h1>
-                    <p id="traingle-area" class="text-center">Area (A) = w x I </p>
-                    <input class="w-20" placeholder="Enter w" type="text" name="" id="traingle-input1">
+                    <p id="" class="text-center">Area (A) = w x I </p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter w" type="text" name="" id="rectangle-inputw">
                     <p class="inline">cm</p>
-                    <input class="w-20" placeholder="Enter l" type="text" name="" id="traingle-input2">
+                    <input class="w-20 bg-slate-300" placeholder="Enter l" type="text" name="" id="rectangle-inputl">
                     <p class="inline">cm</p>
-                    <button id="area-traingle" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-4 ">Calculate</button>
+                    <button id="btn-rectangle" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-8 w-full hover:bg-rose-800 ">Calculate</button>
                 </div>
 
                 <!-- Parallelogram section -->
-                <div class="bg-slate-200 p-4 justify-items-center">
+                <div class="border-solid border-2 border-indigo-100 rounded-lg ml-2 p-4 justify-items-center">
                     <img src="images/parallelogram.png" alt="">
                     <h1 class="text-center mt-8 text-2xl text-bold">Parallelogram</h1>
                     <p class="text-center">Area (A) = b X h </p>
-                    <input class="w-20" placeholder="Enter b" type="text" name="" id="parallelogram-input1">
+                    <input class="w-20 bg-slate-300" placeholder="Enter b" type="text" name="" id="parallelogram-input1">
                     <p class="inline">cm</p>
-                    <input class="w-20" placeholder="Enter h" type="text" name="" id="parallelogram-input2">
+                    <input class="w-20 bg-slate-300" placeholder="Enter h" type="text" name="" id="parallelogram-input2">
                     <p class="inline">cm</p>
-                    <button id="area-parallelogram" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-4 ">Calculate</button>
+                    <button id="area-parallelogram" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-12 w-full  hover:bg-rose-800">Calculate</button>
                 </div>
                 <!-- area-value-display-section -->
-                <div class="bg-slate-200 p-4 justify-items-center">
-                   <h1 class="text-2xl text-semibold w-full px-6">Area Calculation</h1>
+                <div class="border-solid border-2 border-indigo-100 rounded-lg p-4 justify-items-center">
+                   <h1 class="text-2xl text-semibold w-full px-6 underline underline-offset-4">Area Calculation</h1>
+                   <h3 class="mt-4">* Traingle area = <span id="traingle-area">00</span></h3>
+                   <h3>* Rectangle Area = <span id="rectangle-area">00</span></h3>
+                </div>
+
+                <!-- Rhombus-section -->
+                <div class="border-solid border-2 border-indigo-100 rounded-lg  mt-4 p-4 justify-items-center">
+                    <img src="images/rhombus.png" alt="">
+                    <h1 class="text-center mt-8 text-2xl text-bold">Rhombus</h1>
+                    <p class="text-center">Area (A) = 0.5 x d1 x d2 </p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter d1" type="text" name="" id="parallelogram-input1">
+                    <p class="inline">cm</p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter d2" type="text" name="" id="parallelogram-input2">
+                    <p class="inline">cm</p>
+                    <button id="area-parallelogram" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-4  hover:bg-rose-800">Calculate</button>
+                </div>
+                <!-- Pentagon -->
+                <div class="border-solid border-2 border-indigo-100 rounded-lg mt-4 p-4 pl-9 justify-items-center">
+                    <img class="justify-items-center" src="images/pentagon.png" alt="">
+                    <h1 class="text-center mt-8 text-2xl text-bold">Pentagon</h1>
+                    <p class="text-center">Area (A) = = 0.5 x p x b</p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter p" type="text" name="" id="parallelogram-input1">
+                    <p class="inline">cm</p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter b" type="text" name="" id="parallelogram-input2">
+                    <p class="inline">cm</p>
+                    <button id="area-parallelogram" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-6 w-full  hover:bg-rose-800">Calculate</button>
+                </div>
+                <!-- Ellipse-section -->
+                <div class="border-solid border-2 border-indigo-100 rounded-lg p-4 mt-4 justify-items-center">
+                    <img src="images/ellipse.png" alt="">
+                    <h1 class="text-center mt-8 text-2xl text-bold">Ellipse</h1>
+                    <p class="text-center">Area (A) = π x ab</p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter a" type="text" name="" id="parallelogram-input1">
+                    <p class="inline">cm</p>
+                    <input class="w-20 bg-slate-300" placeholder="Enter b" type="text" name="" id="parallelogram-input2">
+                    <p class="inline">cm</p>
+                    <button id="area-parallelogram" class="px-24 py-2 bg-blue-500 block text-white rounded-lg mt-8 w-full  hover:bg-rose-800">Calculate</button>
                 </div>
             </div>
         </section>
@@ -71,7 +107,7 @@
     </main>
    
     
-
+    <script src="js/utility.js"></script>
     <script src="js/area-calculator.js"></script>
 </body>
 </html>
